@@ -1,24 +1,13 @@
-<?php 
-
-require_once('../app/config/config.php');
-
-session_start();
-$nama = $_SESSION['nama_user'];
-if (!isset($_SESSION['nama_user'])) {
-    header("Location: ../index.php");
-}
-$nama_asli = $_SESSION['nama_asli'];
-?>
-<title>Pembayaran SPP</title>
 <link rel="stylesheet" href="../public/css/main.css">
+<title>Pembayaran SPP</title>
 <div class="container">
     <h2 class="text-end mt-4"><strong style="color:#5271FF;">ADMINISTRASI KEUANGAN</strong></h2>
     <h4 class="text-end">SMAN 2 BONDOWOSO</h4>
-    <h4 class="ms-5 mt-4">Selamat datang, <strong style="color:#5271FF;"><?= $nama_asli ?></strong></h4>
+    <h4 class="ms-5 mt-4">Selamat datang, <strong style="color:#5271FF;"><?= $data[0] ?></strong></h4>
     <div class="row text-center mt-5">
         <div class="col-4">
             <div class="icon">
-                <a href="daftar_siswa.php?kelas=X-MIPA-1">
+                <a href="<?= base_url . '/siswa/X-MIPA-1' ?>">
                     <i class="bi bi-person-lines-fill"></i>
                 </a>
             </div>

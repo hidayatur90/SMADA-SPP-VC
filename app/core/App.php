@@ -8,7 +8,11 @@ class App{
 	public function __construct(){
 		$url = $this->parseURL();
         // var_dump($url);
-		if(file_exists('../app/controllers/' . $url[0] . '.php')){
+		if ($url == null){
+			$this->controller = 'Login';
+			$this->method = 'index';
+			$this->params = [];
+		} else if(file_exists('../app/controllers/' . $url[0] . '.php')){
 			$this->controller = $url[0] ;
 			unset($url[0]);
 		}

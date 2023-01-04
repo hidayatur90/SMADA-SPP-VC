@@ -4,12 +4,3 @@ body{
     background-size: 100% 125%;
     font-family: "Arial", Times, sans-serif;
 }
-.icon {
-    font-size: 100px;
-}
-.icon i {
-    color: black;
-}
-.icon i:hover {
-    color: #5271FF;
-}
