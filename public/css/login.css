@@ -1,3 +1,4 @@
+/* Mengikut main.css */
 .back {
     background: url('../img/bg.png');
     background-repeat: no-repeat;
@@ -6,7 +7,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-  }
+}
 
 .div-center {
   width: 400px;
